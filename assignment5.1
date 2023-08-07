@@ -1,0 +1,26 @@
+def chessboard(I,F):
+    pass
+
+print("if you wana have a chessboard in your count number enter s if you wana leave enter e")
+player_choose=input("enter your choice :")
+
+while True:
+    if player_choose == "s" :
+        I =int(input("enter the line: "))
+        F =int(input("enter the column: "))
+        for s in range(I) :
+            for m in range(F):
+                if m%2==0 :
+                    print("#" , end="")
+                else :
+                    print("$" , end="")
+            print()
+    
+    elif player_choose == "e" :
+        break
+
+else :
+    print("error")       
+
+       
+chessboard(I,F)
